@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+:root {
+  --bg-primary: #030712;
+  --bg-surface: #090e1a;
+
+  --accent-cyan: #22d3ee;
+  --accent-purple: #a855f7;
+  --accent-pink: #f472b6;
+
+  --text-primary: #f9fafb;
+  --text-secondary: #9ca3af;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: Inter, sans-serif;
+}
