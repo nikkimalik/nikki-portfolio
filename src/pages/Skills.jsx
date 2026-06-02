@@ -1,5 +1,7 @@
+import SkillsSection from "../sections/SkillsSection";
+
 function Skills() {
-  return <h1>Skills Page</h1>;
+  return <SkillsSection />;
 }
 
 export default Skills;

@@ -7,12 +7,14 @@ import Journey from "./pages/Journey";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
 import Wanderlust from "./pages/Wanderlust";
-import FrontendLab from "./pages/FrontendLab";
+import Lab from "./pages/Lab";
 import Contact from "./pages/Contact";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <BrowserRouter>
+    <ScrollToTop />
       <Routes>
         <Route element={<RootLayout />}>
           <Route path="/" element={<Home />} />
@@ -21,7 +23,7 @@ function App() {
           <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/wanderlust" element={<Wanderlust />} />
-          <Route path="/lab" element={<FrontendLab />} />
+          <Route path="/lab" element={<Lab />} />
           <Route path="/contact" element={<Contact />} />
         </Route>
       </Routes>

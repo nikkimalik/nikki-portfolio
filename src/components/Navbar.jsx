@@ -2,6 +2,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import resume from "../assets/Nikki_M.Resume.pdf";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,8 +24,8 @@ function Navbar() {
   const getLinkClass = ({ isActive }) =>
     `transition-colors duration-300 ${
       isActive
-        ? "text-cyan-400 font-semibold"
-        : "text-white hover:text-cyan-400"
+        ? "text-[#D4A5A5] font-semibold"
+        : "text-[#F9FAFB] hover:text-[#D4A5A5]"
     }`;
 
   return (
@@ -34,7 +35,7 @@ function Navbar() {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
-        className="sticky top-0 z-40 backdrop-blur-md bg-[#030712]/40 border-b border-cyan-500/20"
+        className="sticky top-0 z-40 border-b border-[#D4A5A5]/20 bg-[#030712]/40 backdrop-blur-md"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 sm:h-20">
@@ -45,12 +46,21 @@ function Navbar() {
               className="cursor-pointer"
             >
               <NavLink to="/" className="flex items-center gap-2">
-                <div className="w-10 h-10 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-lg">N</span>
-                </div>
-                <span className="hidden sm:inline text-white font-bold text-lg tracking-wider">
-                  Nikki
-                </span>
+               <div className="w-11 h-11 rounded-xl border border-white/10 bg-gradient-to-br from-[#EBC6C6] to-[#B07D7D] flex items-center justify-center shadow-[0_8px_24px_rgba(212,165,165,0.25)]">
+              <span
+              className="text-[#030712] text-xl"
+              style={{
+                fontFamily: "Playfair Display",
+                fontStyle: "italic",
+                fontWeight: 400,
+              }}
+            >
+              N
+            </span>
+            </div>
+                <span className="font-bold text-lg text-[#F9FAFB]">
+              Nikki M.
+            </span>
               </NavLink>
             </motion.div>
 
@@ -73,8 +83,10 @@ function Navbar() {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="#"
-                className="hidden sm:block px-6 py-2 rounded-lg bg-gradient-to-r from-cyan-400 to-blue-500 text-[#030712] font-semibold hover:shadow-lg hover:shadow-cyan-400/50 transition-all duration-300"
+                href={resume}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hidden sm:block px-6 py-2 rounded-lg bg-gradient-to-r from-[#D4A5A5] via-[#C89AA6] to-[#B07D7D] text-[#030712] font-semibold hover:shadow-lg hover:shadow-[#D4A5A5]/35 transition-all duration-300"
               >
                 Resume
               </motion.a>
@@ -95,7 +107,7 @@ function Navbar() {
                       exit={{ rotate: 90 }}
                       transition={{ duration: 0.2 }}
                     >
-                      <X size={24} className="text-cyan-400" />
+                      <X size={24} className="text-[#D4A5A5]" />
                     </motion.div>
                   ) : (
                     <motion.div
@@ -105,7 +117,7 @@ function Navbar() {
                       exit={{ rotate: -90 }}
                       transition={{ duration: 0.2 }}
                     >
-                      <Menu size={24} className="text-white" />
+                      <Menu size={24} className="text-[#F9FAFB]" />
                     </motion.div>
                   )}
                 </AnimatePresence>
@@ -121,7 +133,7 @@ function Navbar() {
                 animate={{ opacity: 1, height: "auto" }}
                 exit={{ opacity: 0, height: 0 }}
                 transition={{ duration: 0.3 }}
-                className="md:hidden border-t border-cyan-500/20 overflow-hidden"
+                className="md:hidden border-t border-[rgba(255,255,255,0.08)] overflow-hidden"
               >
                 <div className="px-4 py-4 space-y-3">
                   {navLinks.map((link, index) => (
@@ -137,8 +149,8 @@ function Navbar() {
                         className={({ isActive }) =>
                           `block px-4 py-2 rounded-lg transition-all duration-300 ${
                             isActive
-                              ? "bg-cyan-400/20 text-cyan-400 font-semibold border-l-2 border-cyan-400"
-                              : "text-white hover:bg-white/10 hover:text-cyan-400"
+                              ? "bg-[#D4A5A5]/20 text-[#D4A5A5] font-semibold border-l-2 border-[#D4A5A5]"
+                              : "text-[#F9FAFB] hover:bg-white/10 hover:text-[#D4A5A5]"
                           }`
                         }
                       >
@@ -152,11 +164,13 @@ function Navbar() {
                     initial={{ x: -20, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
                     transition={{ delay: navLinks.length * 0.05 }}
-                    className="pt-3 border-t border-cyan-500/20"
+                    className="pt-3 border-t border-[rgba(255,255,255,0.08)]"
                   >
                     <a
-                      href="#"
-                      className="block px-4 py-3 rounded-lg bg-gradient-to-r from-cyan-400 to-blue-500 text-[#030712] font-semibold text-center hover:shadow-lg hover:shadow-cyan-400/50 transition-all duration-300"
+                      href={resume}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block px-4 py-3 rounded-lg bg-gradient-to-r from-[#D4A5A5] via-[#C89AA6] to-[#B07D7D] text-[#030712] font-semibold text-center hover:shadow-lg hover:shadow-[#D4A5A5]/35 transition-all duration-300"
                     >
                       Resume
                     </a>

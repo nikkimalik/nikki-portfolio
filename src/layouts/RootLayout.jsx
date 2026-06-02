@@ -1,11 +1,15 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 function RootLayout() {
   return (
-    <div className="min-h-screen bg-[#030712] text-white">
+    <div className="min-h-screen bg-[#030712] text-[#F9FAFB] flex flex-col">
       <Navbar />
-      <Outlet />
+      <main className="flex-1">
+        <Outlet />
+      </main>
+      <Footer />
     </div>
   );
 }

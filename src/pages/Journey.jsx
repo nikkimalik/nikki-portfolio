@@ -1,5 +1,7 @@
+import JourneySection from "../sections/JourneySection";
+
 function Journey() {
-  return <h1>Journey Page</h1>;
+  return <JourneySection />;
 }
 
 export default Journey;

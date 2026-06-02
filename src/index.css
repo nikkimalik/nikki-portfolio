@@ -4,12 +4,16 @@
   --bg-primary: #030712;
   --bg-surface: #090e1a;
 
+  --accent-blue: #3b82f6;
   --accent-cyan: #22d3ee;
-  --accent-purple: #a855f7;
-  --accent-pink: #f472b6;
+  --accent-primary: #d4a5a5;
+  --accent-mid: #c89aa6;
+  --accent-secondary: #b07d7d;
+  --accent-highlight: #ebcaca;
 
   --text-primary: #f9fafb;
-  --text-secondary: #9ca3af;
+  --text-secondary: #d1d5db;
+  --border-soft: rgba(255, 255, 255, 0.08);
 }
 
 html {
