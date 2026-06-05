@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import resume from "../assets/Nikki_M.Resume.pdf";
+import resume from "../assets/Nikki_Malik_Resume.pdf";
 import ContactForm from "../components/ContactForm";
 import { useNavigate } from "react-router-dom";
 import { FaCopy, FaCheck, FaExternalLinkAlt, FaEnvelope, FaLinkedin, FaGithub, FaMapMarkerAlt, FaDownload } from "react-icons/fa";
