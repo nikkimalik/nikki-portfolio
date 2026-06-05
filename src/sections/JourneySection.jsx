@@ -2,30 +2,30 @@ import { motion } from "framer-motion";
 import {useNavigate} from "react-router-dom";
 
 const journeyItems = [
-  {
-    title: "2023 - MCA Graduate",
+   {
+    title: "2018 - 21 : BCA Graduate",
     description:
-      "Completed MCA and built a strong foundation in software development.",
+      "Built a strong foundation in programming, databases, and computer science fundamentals.",
   },
   {
-    title: "2024 - Infosys",
+    title: "2021 - 23 : MCA Graduate",
     description:
-      "Worked as a Software Tester or QA Engineer and gained professional industry experience.",
+      "Enhanced software development skills through advanced coursework and practical projects.",
   },
   {
-    title: "2025 - AI Evaluation",
+    title: "2021 - 23 : Infosys",
+    description:
+      "Worked as a Software Tester or a QA Engineer and gained professional industry experience.",
+  },
+  {
+    title: "2024 - Present : AI Trainer",
     description:
       "Working on AI evaluation and response quality projects involving analytical thinking and prompt assessment.",
   },
   {
-    title: "2025 - MERN Development",
+    title: "2023 - Present : MERN Development and Building Products",
     description:
-      "Started learning React, Node.js, Express, and MongoDB while building practical projects.",
-  },
-  {
-    title: "2026 - Building Products",
-    description:
-      "Creating full-stack applications and continuously improving frontend and backend engineering skills.",
+      "Started learning React, Node.js, Express, and MongoDB while building practical projects. Creating full-stack applications and continuously improving frontend and backend engineering skills.",
   },
 ];
 
@@ -80,7 +80,7 @@ function JourneySection() {
                 <motion.article
                   key={itemData.title}
                   variants={item}
-                  className="relative flex flex-col sm:flex-row gap-6"
+                  className="relative flex flex-row sm:gap-6 gap-4"
                 >
                   <div className="flex flex-col items-center sm:items-start sm:w-40">
                     <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-[#081018] border border-[#D4A5A5]/30 shadow-[0_0_30px_rgba(212,165,165,0.12)]">
