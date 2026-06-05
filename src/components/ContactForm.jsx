@@ -154,7 +154,7 @@ function ContactForm() {
               name="from_email"
               value={formData.from_email}
               onChange={handleChange}
-              placeholder="your.email@example.com"
+              placeholder="your.email@domain.com"
               disabled={loading}
               className="w-full px-4 py-3 rounded-lg border border-[#D4A5A5]/20 bg-white/5 text-[#F9FAFB] placeholder-[#D1D5DB]/50 transition-colors duration-200 focus:border-[#D4A5A5]/50 focus:bg-white/10 focus:outline-none disabled:opacity-50"
             />

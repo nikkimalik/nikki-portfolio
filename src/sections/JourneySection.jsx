@@ -3,12 +3,12 @@ import {useNavigate} from "react-router-dom";
 
 const journeyItems = [
    {
-    title: "2018 - 21 : BCA Graduate",
+    title: "2021 : BCA Graduate",
     description:
       "Built a strong foundation in programming, databases, and computer science fundamentals.",
   },
   {
-    title: "2021 - 23 : MCA Graduate",
+    title: "2023 : MCA Graduate",
     description:
       "Enhanced software development skills through advanced coursework and practical projects.",
   },
@@ -18,14 +18,14 @@ const journeyItems = [
       "Worked as a Software Tester or a QA Engineer and gained professional industry experience.",
   },
   {
+    title: "2023 - Present : MERN Development & Building Products",
+    description:
+      "Started learning React, Node.js, Express, and MongoDB while building practical projects. Creating full-stack applications and continuously improving frontend and backend engineering skills.",
+  },
+  {
     title: "2024 - Present : AI Trainer",
     description:
       "Working on AI evaluation and response quality projects involving analytical thinking and prompt assessment.",
-  },
-  {
-    title: "2023 - Present : MERN Development and Building Products",
-    description:
-      "Started learning React, Node.js, Express, and MongoDB while building practical projects. Creating full-stack applications and continuously improving frontend and backend engineering skills.",
   },
 ];
 
