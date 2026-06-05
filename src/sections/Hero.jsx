@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Download } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import resume from "../assets/Nikki_M.Resume.pdf";
+import resume from "../assets/Nikki_Malik_Resume.pdf";
 import profileImage from "../assets/profile_picture.jpeg";
 
 function Hero() {

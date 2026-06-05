@@ -2,7 +2,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import resume from "../assets/Nikki_M.Resume.pdf";
+import resume from "../assets/Nikki_Malik_Resume.pdf";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
